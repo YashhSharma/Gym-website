@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness 4 you</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('model.jpg');
+            color: white;
+        }
+        .left{
+           /* border: 4px solid rgb(187, 234, 20);*/
+            display: inline-block;
+            position: absolute;
+            left: 63px;
+            top: 20px;
+        }
+        .mid{
+            /* border: 4px solid red; */
+            display: block;
+            width: 800px;
+            margin: 12px auto;
+        }
+        .right{
+            /* border: 4px solid rgb(13, 233, 43); */
+            display: inline-block;
+            position: absolute;
+            right: 33px;
+            top: 20px;
+        }
+        .left img{
+            
+            width: 50px;
+            filter: invert(100%);
+            margin: auto 80px;
+        }
+        .left div{
+           float: right auto; 
+            text-align: center;
+            line-height: 12px;
+            font-size: 25px;
+        }
+        .navbar{
+            
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            
+        }
+        .navbar li a:hover,.navbar li a:active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px grey solid;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(39, 38, 38);
+        }
+        .container{
+            /* border: 5px solid green; */
+            width: 33%;
+            display: block;
+            border-radius: 25px;
+            margin: 106px 80px;
+            padding: 75px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 440px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 30px auto;
+        }
+        .container h3{
+            text-align: center;
+            font-size: 40px;
+        }
+        .container button{
+            display: block;
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="left">
+                <img src="run.png" alt="Error">
+                <div>
+                    Fitness 4 You
+                </div>
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li> <a href="https:\\google.com">Home</a> </li>
+                    <li> <a href="">About Us</a> </li>
+                    <li> <a href="">Gym Location</a> </li>
+                    <li> <a href="">Contact</a> </li>
+                </ul>
+            </div>
+            
+            <div class="right">
+                <button class="btn">Login</button>
+                <button class="btn">Sign up</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h3>Start your fitness journey with us</h3>
+        <form action="back.php">
+            <div class="form-group">
+               <input type="text" name="Name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                 <input type="number" name="age" placeholder="Enter Your Age">
+              </div>
+              <div class="form-group">
+                 <input type="number" name="phone" placeholder="Enter Your Contact Number">
+              </div>
+              
+              <button class="btn">Submit Now</button>
+
+        </form>
+    </div>
+</body>
+</html>
